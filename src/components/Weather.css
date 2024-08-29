@@ -1,0 +1,98 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    background-image: url(D:\weather application react\weather-application\public\background-image.jpg) ;
+}
+
+.heading{
+    padding: 10px;
+    color: #2E1664;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.weather-container{
+    position: relative;
+    width: auto;
+    height: auto;
+    background-color: #9D89F3;
+    border-radius: 16px;
+    padding: 20px;
+}
+
+.search-box{
+    height: 55px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    background-color: #fff;
+    border-radius: 10px;
+    width: auto;
+}
+
+.search-box input{
+    border: none;
+    height: 55px;
+    font-size: 20px;
+    padding: 10px;
+    margin: 0;
+    border-radius: 10px;
+    text-transform:capitalize;
+}
+
+.search-box input:focus{
+    border: none;
+    outline: none;
+    text-transform:capitalize;
+}
+
+.search-box button{
+    height: 55px;
+    font-size: 20px;
+    color: black;
+    border: none;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+/* .details-weather {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem; 
+    margin: 1rem;
+} */
+
+.details-weather {
+    display: flex;
+    flex-direction: column; /* Arrange items in a column */
+    gap: 1rem; /* Space between each <p> tag */
+    margin: 1rem; /* Space around the container */
+}
+
+.details-weather p {
+    font-size: 1.5rem; /* Adjust font size as needed */
+    padding: 0.5rem; /* Add padding for better spacing */
+}
+
+.temperature-value{
+    font-size: 30px;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+.weather-details h2{
+    font-size: 30px;
+    padding-top: 15px;
+}
